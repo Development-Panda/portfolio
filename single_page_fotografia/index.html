@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="/index.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <title>Single_fotografia</title>
+</head>
+<body>
+    <header>
+      <nav class="sticky">
+        <div class="navbar">
+          
+          <a href="#" class="logo">Fotografia by <em class="ana">Ana.</em></a>
+          
+          <input type="checkbox" id="toggler">
+          <label for="toggler"><i class='bx bx-menu'></i></label>
+          <div class="menu">
+            <ul class="list">
+              <li><a class="link-nav" href="#perfil">SOBRE MI</a></li>
+              <li><a class="link-nav" href="#servicios">SERVICIOS</a></li>
+              <li><a class="link-nav" href="#galeria">GALERIA</a></li>
+              <li><a class="link-nav" href="#comentarios">OPINIONES</a></li>
+              <li><a class="link-nav" href="#contacto">CONTACTO</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <div class="slide-conteiner ">
+      <section class="slide-body fade" >
+        <img src="/images/boda.jpg" alt="Boda">
+      </section>
+  
+      <section class="slide-body fade" >
+        <img src="/images/bautizmo.jpg" alt="Bautismo">
+      </section>
+     
+      <section class="slide-body fade" >
+        <img src="/images/cumple.jpg" alt="Cumpleanos">
+      </section>
+      <section class="slide-body fade" >
+        <img src="/images/grado.jpg" alt="Grado">
+      </section>
+
+  
+      <div class="directions">
+        <a href="#" class="atras" onclick="avanzaSlide(-1)"> &#10094;</a>
+        <a href="#" class="adelante" onclick="avanzaSlide(1)"> &#10095;</a>
+      </div>
+      
+      <div class="barras">
+        <span class="barra active" onclick="posicionSlide(1)">
+          <img src="/images/boda.jpg" alt="Boda">
+        </span>
+        <span class="barra" onclick="posicionSlide(2)">
+          <img src="/images/bautizmo.jpg" alt="Bautismo">
+        </span>
+        <span class="barra" onclick="posicionSlide(3)">
+          <img src="/images/cumple.jpg" alt="Cumpleanos">
+        </span>
+        <span class="barra" onclick="posicionSlide(4)">
+          <img src="/images/grado.jpg" alt="Grado">
+        </span>
+      </div>
+      
+    </div>
+
+  <section id="perfil">
+    <div class="contenedor-perfil">
+      <div class="imagen">
+        <img src="/images/perfil.jpg" alt="perfil">
+      </div>
+      <div class="contenedor_modelo">
+        <h3 class="modelo">Hola!, Soy <em class="ana">Ana</em></h3>
+        <p>Fotografa profesional, dedicada a la fotografia de bodas, cumpleanos entre otros eventos. Yo me encargare de plasmar los mejores momentos en fotografias y videos.</p>   
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="contenedor-servicios">
+      <h1>SERVICIOS</h1>
+      <div class="cartas">
+          <div class="carta carta1">
+            <h2>Fotografia</h2>
+          </div>
+          <div class="carta carta2">
+            <h2>Fotografia + Video</h2><br>
+          </div>
+          <div class="carta carta3">
+            <h2>Adicionales</h2><br>
+          </div>
+    </div>
+  </section>
+
+
+  <section id="galeria">
+    <h1>GALERIA: Sesión fotográfica</h1>
+    <div class="contenedor-galeria">
+      <div class="galeria-item">
+        <img src="/images/galeria/boda2.jpg" alt="boda" class="galeria-img">
+        <h2 class="galeria-titulo">Matrimonio</h2>
+      </div>
+      <div class="galeria-item">
+        <img src="/images/galeria/baby.jpg" alt="baby"  class="galeria-img">
+        <h2 class="galeria-titulo">Bebes</h2>
+      </div>
+      <div class="galeria-item">
+        <img src="/images/galeria/cara-nena.jpg" alt="nena" class="galeria-img">
+        <h2 class="galeria-titulo">Quince Años</h2>
+      </div>
+      <div class="galeria-item">
+        <img src="/images/galeria/embarazo.jpg" alt="embarazo" class="galeria-img">
+        <h2 class="galeria-titulo">Embarazo</h2>
+      </div>
+      <div class="galeria-item">
+        <img src="/images/galeria/embarazo2.jpg" alt="embarazo" class="galeria-img">
+        <h2 class="galeria-titulo">Revelacion del bebe</h2>
+      </div>
+      <div class="galeria-item">
+        <img src="/images/galeria/fiesta2.jpg" alt="fiesta" class="galeria-img">
+        <h2 class="galeria-titulo">Fiestas</h2>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="comentarios">
+    <div class="contenedor-comentarios">
+      <h1>OPINIONES</h1>
+      <div class="comentarios-perfil">
+        <div class="comentario">
+          <img src="/images/perfiles/hombre.jpg" alt="">
+          <p>El mejor servicio de fotografia, un excelente acompañamiento en todo nuestro evento.</p>
+          <h4>Familia Rodriguez Hernandez</h4>
+        </div>
+        <div class="comentario">
+          <img src="/images/perfiles/baby2.jpg" alt="">
+          <p>Mi bebe se sintio muy comodo en la secion y se divirtio muchoo!, ademas de excelentes fotos.</p>
+          <h4>Familia Perez Rojas</h4>
+        </div>
+        <div class="comentario">
+          <img src="/images/perfiles/pexels-pixabay-38554.jpg" alt="">
+          <p>Mi matrimonio fue cubierto con esta gran fotografa. Cada momento esta en nuestro album ahora. Gracias Ana.</p>
+          <h4>Familia Duran Hernandez</h4>
+        </div>
+      </div>
+    </div> 
+</section>
+
+<section id="contacto">
+  <div class="contenedor-contacto">
+    <h1>Contacta a Ana!</h1>
+    <div class="img-p">
+      <p>Animate, cotiza y escribeme tus dudas. Estare esperando tu mensaje para que planeemos como quieres guardar tus mejores momentos en una fotografia.</p>
+    </div>
+
+    <div class="contenedor-informacion">
+      <div class="contenedor-ana">
+        <ul>
+          <li>
+            <i class='bx bxl-whatsapp' ></i> 
+            <h6>+57 3xx-xxx-xxxx</h6>
+          </li>
+          <li>
+            <i class='bx bxl-instagram' ></i> 
+            <h6>@example__1</h6>
+          </li>
+          <li>
+            <i class='bx bxl-facebook' ></i> 
+            <h6>cuenta@example.com</h6>
+          </li>
+          <li>
+            <i class='bx bxl-gmail' ></i> 
+            <h6>cuenta@example.com</h6>
+          </li>
+          
+        </ul>
+      </div>
+
+      <form action="#">
+        <div class="parte1">
+          <div class="input-group">
+            <input type="text" name="name" id="name" required class="input">
+            <label for="name" class="input-label">Nombre:</label>
+          </div>
+          <div class="input-group">
+            <input type="email" name="email" id="email" required class="input">
+            <label for="email" class="input-label">Email address</label>
+          </div>
+
+        </div>
+
+        <div class="parte1">
+          <div class="input-group">
+            <input type="phone" name="phone" id="phone" required class="input">
+            <label for="email" class="input-label">Telefono</label>
+          </div>
+
+          <div class="input-group">
+            <input type="text" name="evento" id="evento" required class="input">
+            <label for="evento" class="input-label">Tipo de Evento</label>
+          </div>
+        </div>
+        <div class="input-group1">
+          <textarea name="message" class="message" placeholder="Hola Ana, me gustaria..." >Hola Ana, me gustaría...
+          </textarea>
+        </div>
+        <button type="submit" class="boton">ENVIAR</button>
+      </form>
+
+    </div>
+  </div>
+
+</section>
+<footer>
+  <div class="contenedor-footer">
+    <h5>
+      &copy; Panda Developer, 2023.
+    </h5>
+  </div>
+</footer>
+
+</body>
+</html>
